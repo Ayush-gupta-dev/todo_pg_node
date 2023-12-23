@@ -1,4 +1,4 @@
-Whats happening by GPT
+Whats happening?
 
 ![image](https://github.com/Ayush-gupta-dev/todo_pg_node/assets/137040550/da64ebe1-00a4-4a56-a4e9-81ee2bd41ff7)
 
@@ -30,4 +30,5 @@ It specifies dependencies between services and maps ports from the host machine 
 
 ![Screenshot from 2023-12-23 21-20-29](https://github.com/Ayush-gupta-dev/todo_pg_node/assets/137040550/66b9b9b0-08ed-466d-a808-4ecda7ceb748)
 
-In summary, Docker Compose orchestrates the setup of these interconnected containers, ensuring they start in the correct order and can communicate with each other.
+useful link
+https://www.bezkoder.com/docker-compose-nodejs-postgres/ 

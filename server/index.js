@@ -3,12 +3,30 @@ const app = express()
 const pool =require("./db")
 const cors= require("cors")
 const PORT = 8081;  
-
+ 
 
 //middlewares
 app.use(cors())
 app.use(express.json())
 
+
+//create table
+// create table
+async function createTodoTable() {
+    try {
+        const createTableQuery = `
+            CREATE TABLE IF NOT EXISTS todo(
+                todo_id SERIAL PRIMARY KEY,
+                description VARCHAR(255) NOT NULL
+            )
+        `;
+        await pool.query(createTableQuery);
+        console.log("table created or already exists");
+    } catch (error) {
+        console.log(error);
+    }
+}
+createTodoTable();
 //routes//
 
 //create a todo
